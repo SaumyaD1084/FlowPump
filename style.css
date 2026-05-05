@@ -1,33 +1,33 @@
 :root {
-  --primary-color: #10b981;
-  --primary-hover: #059669;
-  --bg-color: #f0fdf4;
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-color: #f8fafc;
   --card-bg: #ffffff;
-  --text-main: #064e3b;
-  --text-muted: #475569;
-  --border-color: #a7f3d0;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
   --error-bg: #fef2f2;
   --error-text: #ef4444;
   --success-bg: #ecfdf5;
   --success-text: #10b981;
-  --highlight-gradient: linear-gradient(135deg, #34d399, #059669);
+  --highlight-gradient: linear-gradient(135deg, #3b82f6, #2563eb);
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-glow: 0 0 15px rgba(16, 185, 129, 0.3);
+  --shadow-glow: 0 0 15px rgba(37, 99, 235, 0.3);
   --border-radius: 12px;
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
 }
 
 [data-theme="dark"] {
-  --primary-color: #34d399;
-  --primary-hover: #6ee7b7;
-  --bg-color: #022c22;
-  --card-bg: #064e3b;
-  --text-main: #ecfdf5;
-  --text-muted: #a7f3d0;
-  --border-color: #065f46;
+  --primary-color: #3b82f6;
+  --primary-hover: #60a5fa;
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
   --error-bg: #450a0a;
   --error-text: #fca5a5;
   --success-bg: #064e3b;
