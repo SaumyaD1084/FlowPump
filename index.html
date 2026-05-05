@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering Pump Selection Tool based on flow rate and head.">
+  <title>Pump Selection Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Pump Selection Tool</h1>
+      <p>Find the best pump model based on flow rate and head.</p>
+    </header>
+
+    <main>
+      <div class="card input-card">
+        <form id="pump-form">
+          <div class="input-group">
+            <label for="flow">Flow Rate (L/min)</label>
+            <input type="number" id="flow" name="flow" step="any" placeholder="e.g. 100" required>
+          </div>
+          <div class="input-group">
+            <label for="head">Head / Depth (meters)</label>
+            <input type="number" id="head" name="head" step="any" placeholder="e.g. 50" required>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn primary-btn" id="submit-btn">
+              <span>Find Pump</span>
+              <div class="spinner hidden" id="loading-spinner"></div>
+            </button>
+            <button type="reset" class="btn secondary-btn" id="reset-btn">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="results-container" class="results-container hidden">
+        <h2>Selection Results</h2>
+        <div id="results-content"></div>
+      </div>
+      
+      <div id="error-message" class="error-message hidden"></div>
+    </main>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+    <svg id="sun-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
